@@ -36,14 +36,14 @@ body{
     
 }
 .sec-one{
-    background: url(/pix/sunshine1.jpg) 38.5% 0%;
+    background: url(../pix/sunshine1.jpg);
     position: relative;
     display: grid;
     background-size: cover;  
    background-repeat: repeat;
 }
 .sec-two{
-    background: url(/pix/sunshine2.jpg) 75.5% 0%;
+    background: url(../pix/sunshine2.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ body{
     background-repeat: repeat;
 }
 .sec-three{
-    background: url(/pix/sunshine1.jpg) 25% 0% ;
+    background: url(../pix/sunshine1.jpg);
     /* background: url(/pix/sunshine1.jpg); */
     display: grid;
     align-items: initial;
@@ -61,7 +61,11 @@ body{
     background-repeat: repeat;
     position: relative;
 }
-
+@media (max-width:992px){
+    .sec-one,.sec-two,.sec-three{
+        background-size: contain;
+    }
+}
 /* scroll buttons */
 #scroll{
     position: absolute;
@@ -225,7 +229,7 @@ body{
 
 }
 .empty{
-    min-height: 250px;
+    min-height: 350px;
 }
 .sec-one-row .effect-one:first-child{
 transition-delay: 150ms;
@@ -266,24 +270,18 @@ input {
     background-color: #5e4b7c;
     border-color: #3559a1;
 }
-form>button{
-
-}
 @media (min-width:992px){
     form{
         width: 70%;
     }
-
 }
 .contact{
     position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
-    
     align-items: center;
 }
-
 .contact a{
     margin-right: 20px;
     font-size: 30px;
