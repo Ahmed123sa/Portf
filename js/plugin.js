@@ -4,12 +4,12 @@ let landing = document.querySelector(('.landing'));
 
 ScrollDown.addEventListener('click',()=>{
    
-   landing.scrollBy(0, 600);
+   landing.scrollBy(0, 500);
    
 });
 ScrollUp.addEventListener('click',()=>{
     
-   landing.scrollBy(0, -400);
+   landing.scrollBy(0, -600);
    
 })
 function MouseEnter(){
